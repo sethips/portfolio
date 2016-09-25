@@ -1,0 +1,131 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    meta(name='description', content='Justin Richardsson. UX/UI designeveloper, with extensive practical experience in brand strategy, creative direction and project management; devoted to Functional Programming and Information Architecture. Also a huge fan of semantics and futuristic interfaces.')
+    meta(name='author', content='hallaathrad')
+    title qlip | UI/UX Design and Development
+    link(rel='stylesheet prefetch', href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css')
+    link(rel='stylesheet prefetch', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.1/css/font-awesome.min.css') 
+    link(rel='stylesheet prefetch', href='./styles/style.css')
+  body#page-top.index(data-spy='scroll', data-target='.navbar-fixed-top')
+    // Intro banner - Elevator spiel
+    header#banner.navbar.navbar-default.navbar-fixed-top
+      .container
+        a.scollable(href='#top')
+          img(src='/images/qlip.png', alt='qlip | UI/UX Design and Development', title='qlip | UI/UX Design and Development')
+        button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#navbar', aria-expanded='false')
+          span.sr-only Toggle navigation
+          span.icon-bar
+          span.icon-bar
+          span.icon-bar
+        nav#navbar.collapse.navbar-collapse(role='navigation')
+          ul.nav.navbar-nav.navbar-right
+            li
+              a.scrollable(href='#top') About
+            li
+              a.scrollable(href='#portfolio') Portfolio
+            li
+              a.scrollable(href='#contact') Contact
+    // end banner
+    a#top(name='home')
+    main
+      header
+        .intro-text
+          p Front-End Developer and UX/UI designer, with practical experience in project management, branding strategy, and creative direction;  devoted to functional programming and information architecture.
+          hr.emblem-bright
+          span.skills Web Developer - User Experience Designer - Graphic Artist
+        img(src='/images/avatar.jpg', alt='A picture of Justin looking at San Francisco from across the Golden Gate Bridge.', title='A picture of Justin looking at San Francisco from across the Golden Gate Bridge.')
+      // Portfolio section
+      section#portfolio
+        h2 Portfolio
+        hr.emblem-dark
+        p This is just a small sample of the projects I&apos;ve made part of. Branding, web and interface design, product development, advertising, etc. My stint through a couple of advertising agencies has given me experience through a breadth of industries.
+        ul.grid
+          li
+            img(src='/images/YMCA-Realtor-Donation-3.jpg', alt='')
+          li
+            img(src='/images/webcaballero.jpg', alt='')
+          li
+            img(src='/images/webmarqas.jpg', alt='')
+          li
+            img(src='/images/webbrandaxis.jpg', alt='')
+          li
+            img(src='/images/panacea1.jpg', alt='')
+          li
+            img(src='/images/webgatomalo.jpg', alt='')
+        p Briefly put, my expertise ranges from a Computer Science + Software Engineering background, moving into a B.A. Graphic Design degree, a graduate diploma in Brand strategy, and finally UX and product design courses.
+          a(href='https://www.flickr.com/photos/hallaathrad/', target='_blank', title='My Flickr') Flickr
+          | ? perhaps make a comment or two?.
+      // end portfolio
+      // Contact section
+      section#contact
+        h2 Contact Me
+        hr.emblem-dark
+        div
+          form#contactForm(name='sentMessage', novalidate='')
+            .form-item.control-group
+              label(for='“name”') Name
+              input#name(type='text', placeholder='Name', required, data-validation-required-message='Please enter your name.')
+              p.help-block.text-danger
+            .form-item.control-group
+              label(for='“email”') Email Address
+              input#email(type='email', placeholder='Email Address', required, data-validation-required-message='Please enter your email address.')  
+              p.help-block.text-danger
+            .form-item.control-group
+              label(for='“phone”') Phone Number
+              input#phone(type='tel', placeholder='Phone Number', required, data-validation-required-message='Please enter your phone number.')
+              p.help-block.text-danger
+            .form-item.control-group
+              label(for='“message”') Message
+              textarea#message(rows='5', placeholder='Message', required, data-validation-required-message='Please enter a message.')
+              p.help-block.text-danger
+            br
+            #success
+            button(type='submit') Send
+          div
+            p
+              | Want to get in touch with me? Be it to request more info about myself or my experience, to ask for my r&eacute;sum&eacute; or tips on how to solve your sudoku, random questions about the universe and the meaning of life; or even if only for some nice 
+              a(href='https://en.wikipedia.org/wiki/Fika_(Sweden)', target='_blank') Fika
+              |  here in stunning Toronto&hellip; just feel free to drop me a line anytime.
+            p You'll get a response A.S.A.P.
+            p No spam/soliciting pour moi, merci :)
+      // end contact
+      // Scroll to Top Button (Only supposed to be visible on small and small screen sizes)
+      .scroll-top
+        a.button.scrollable(href='#top')
+          i.fa.fa-fw.fa-chevron-up
+    // Footer
+    footer
+      .container
+        #disclaimer
+          | qlip 
+          span.flipped &copy;
+          span
+            script.
+              document.write(new Date().getFullYear())
+            | . All Rights Reversed.
+        ul#social_links
+          li
+            a.button.social(href='https://linkedin.com/in/hallaathrad', title='Linkedin', target='_blank')
+              i.fa.fa-fw.fa-linkedin
+          li
+            a.button.social(href='https://github.com/hallaathrad', title='Github', target='_blank')
+              i.fa.fa-fw.fa-github
+          li
+            a.button.social(href='https://twitter.com/hallaathrad', title='Twitter', target='_blank')
+              i.fa.fa-fw.fa-twitter
+          li
+            a.button.social(href='https://www.flickr.com/photos/hallaathrad/', title='My Flickr', target='_blank')
+              i.fa.fa-fw.fa-flickr
+    // <aside id="html5badge"><img src="http://www.w3.org/html/logo/badge/html5-badge-v-css3-graphics-semantics.png" width="38" height="170" alt="HTML5 Powered with CSS3 / Styling, Graphics, 3D &amp; Effects, and Semantics" title="HTML5 Powered with CSS3 / Styling, Graphics, 3D &amp; Effects, and Semantics"></aside>
+    script(src="./scripts/jquery.min.js")
+    script(src="./scripts/jquery.easing.min.js")
+    script(src="./scripts/bootstrap.min.js")
+    
+    // Contact Form JavaScript
+    script(src="./scripts/jqBootstrapValidation.js")
+    script(src="./scripts/contact_me.js")
+    //<!
+    script(src="./scripts/qlip.js", defer)
